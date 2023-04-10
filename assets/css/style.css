@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro";
+}
+.area-gamer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../imagens/fundo/fundo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all ease 1s;
+}
+.area-button .pvb{
+    display: none;
+}
+/* parte 1 */
+.area-gamer-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all ease 1s;
+    
+}
+.area-title{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+}
+.area-img{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.img img{
+    width: 260px;
+}
+.mago img {
+    width: 170px;
+}
+.barbaro img{
+    width: 180px;
+}
+.arqueira img{
+    width: 180px;
+}
+
+.area-button{
+    position: absolute; 
+   bottom: 9%;
+}
+.area-button button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #b0b0b0;
+    box-shadow: 0 9px  #666;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.area-button button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    color: #ccc;
+    transform: translateY(5px);
+}
+.area-button span{
+    color: #f00;
+}
+
+
+/* parte 2*/
+
+.area-gamer-2-p1,.area-gamer-2-p2{
+    width: 550px;
+    background-image: url('../imagens/fundo/fundo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    color: #FFF;
+    display: none;
+    flex-direction: column;    
+    transition: all ease 2s;
+}
+
+.area-title-p1,.area-title-p2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.area-selection-p1,.area-selection-p2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.selection{
+    width: 120px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px transparent;
+    margin: 0 5px;
+    transition: all ease 1s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+}
+.selection:hover{
+    border: #4D8E2B solid 2px;
+    box-shadow: 0 0 10px #4D8E2B;
+}
+.selection img{
+    width: 120px;
+}
+.super-mago-p1 img,.super-mago-p2 img,.superbarbaro-p1 img,.superbarbaro-p2 img,.arqueiro-magico img{
+    width: 85px;
+}
+.area-checkbox-p1,.area-checkbox-p2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.area-checkbox-p1 input,.area-checkbox-p2 input{
+    flex: 1;
+    cursor: pointer;
+   
+}
+.area-name-p1,.area-name-p2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8%;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.area-name-p1 input,.area-name-p2 input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.area-name-p1 button,.area-name-p2 button{
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;  
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #c0c0c0;
+    box-shadow: 0 9px  #666;
+    border: none;
+    text-transform: uppercase;
+}
+.area-name-p1 button:active,.area-name-p2 button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+}
+.area-selection-p1 span, .area-selection-p2 span{
+    padding: 5px 0 ;
+}
+.area-desc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.barbaro-desc,.mago-desc,.principe-desc,.arqueira-desc {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-desc i{
+    border-radius: 50%;
+    border: solid 1px #fff;
+    padding: 2px 4px;
+    cursor: help;
+}
+
+.descrição{
+    position: absolute;
+    background-color: rgba(220,220,220, 0.7);
+    font-weight: 600;
+    color: #000;
+    width: 130px;
+    font-size: 11px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    bottom: 40%;
+}
+.area-desc h4{
+    width: 100%;
+    text-align: center;
+    color: #b9132c;
+    text-transform: uppercase;
+}
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    color: #000;
+}
+.attributes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #1c2e89;
+}
+#att{
+    color: #106b21;
+    text-transform: uppercase;
+}
+.attributes span{
+    padding: 0;
+}
+
+/*parte 3 */
+
+.area-gamer-3{
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    color: #FFF;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+}
+.area-figth{
+    width:100%;
+    flex: 1;
+    background-image: url('../imagens/fundo/fundo2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all ease 1s ;
+}
+.area-vitoria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.area-p1,.area-p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+.counter-p1,.counter-p2{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    padding: 5px;
+    margin: 0 7px;
+}
+.counter-p1 i,.counter-p2 i{
+    color: #D8BA62;
+}
+.area-hp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    gap: 15%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.area-hp-p1,.area-hp-p2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.area-bar-life{
+    display: flex;
+    gap: 5px;
+    margin: 2px 0;
+    justify-content: start;
+    align-items: center;
+}
+.barlife-p1,.barlife-p2{
+    border: 2px solid #000 ;
+    border-radius: 5px;
+    width: 75%;
+    height: 15px;
+    transition: all ease 1s;
+}
+.life{
+    width: 50%;
+    height:inherit;
+    background-color: #f00;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all ease 1s;
+}
+.name-hp{
+    width: 30%;
+}
+.area-bar-manna{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.bar-manna{
+    border-radius: 5px;
+    width:50%;
+    height: 15px;
+    display: flex;
+    gap: 1%;
+}
+.manna{
+    border-radius: 5px;
+    flex: 1;
+    height: inherit;
+    border: 2px solid #000;
+    background-color: transparent;
+    transition: all ease 1s;
+}
+
+
+/* imagens */
+.area-character{
+    display: flex;
+    width: 100%;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.character-p1 img,.character-p2 img{
+    width: 100px;
+}
+.character-p2 img{
+    transform: scaleX(-1);
+}
+
+/* parte controles */
+.info-attack{
+    position: absolute;
+    background-color: rgba(230,230,230, 0.8);
+    font-weight: 600;
+    color: #1c2e89;
+    width: 160px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.attack-basic .info-attack,.attack-defense .info-attack{
+   bottom: 41%;
+}
+.attack-special .info-attack,.attack-hard .info-attack{
+    bottom: 19%;
+ }
+.attack-basic,.attack-hard,.attack-defense,.attack-special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.info-desc-control{
+    font-size: 12px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    padding: 1px 4px;
+    font-weight: bold;
+    color: #fff;
+    cursor: help;
+}
+#n{
+    color: #106b21;
+    font-size: 14px;
+}
+.area-background-control{
+    width: 100%;
+    background-image: url('../imagens/fundo/fundo01.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.area-attack{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.attack-buttons-p1{
+    border-right: #666  solid 5px;
+}
+.attack-buttons-p1,.attack-buttons-p2{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.attack-area1,.attack-area2{
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+}
+
+.area-gamer-3 button{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #c0c0c0;
+    box-shadow: 0 9px  #666;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.area-gamer-3 button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+}
+
+
+.area-log{
+    width: 100%;
+    height: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 3px #ccc;
+    
+   
+}
+.info{
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    width: 60%;
+    height: 60px;
+    color:#000 ;
+    padding: 10px;
+    text-transform: uppercase;
+    
+}
+.area-rest{
+    width: 30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.area-rest button{
+    background-color: #31336E;
+    box-shadow: 0 9px  #666;
+    color: #FFF;
+    
+}
+.erro-name{
+    background-color: #f00;
+    padding: 3px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -4%;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 13px;
+    width: 70%;
+    opacity: 0;
+}
+.erro{
+   opacity: 1;
+}
+.activeb {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    color: #ccc;
+    color: #000;
+}
+@media(max-width:1000px){
+    .img img{
+        width: 180px;
+    }
+    .mago img,.barbaro img{
+        width: 150px;
+    }
+    .area-button button{
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+@media (max-width:900px) {
+    .area-title{
+        font-size: 20px;
+    }
+    .img img{
+        width: 150px;
+    }
+    .mago img,.barbaro img{
+        width: 125px;
+    }
+  
+    .area-button button{
+        padding: 8px;
+        font-size: 16px;
+    }
+    .area-gamer-3 button{
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    .info-desc-control{
+        font-size: 10px;
+    }
+    .area-background-control{
+        padding: 10px;
+    }
+    .attack-buttons-p1{
+        border-right: solid 2px #666;
+    }
+    .character-p1 img, .character-p2 img{
+        width: 90px;
+    }
+    
+}
+@media (max-width:770px) {
+    .area-title{
+        font-size: 18px;
+    }
+    .area-gamer-3 button{
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    .info-desc-control{
+        font-size: 10px;
+    }
+    .arqueira img{
+        width: 120px;
+    }
+    .area-desc,.info-desc-control{
+        display: none;
+    }
+    .area-p1, .area-p2,.area-hp{
+        font-size: 12px;
+    }
+    .area-figth{
+        padding: 10px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .area-gamer-3{
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    .area-background-control{
+        border-radius: 0;
+    }
+    .barlife-p1, .barlife-p2{
+        height: 12px;
+    }
+    .life{
+        border-radius: 4px;
+    }
+    .bar-manna{
+        height: 10px;
+    }
+    .manna{
+        border-radius: 3px;
+    }
+    .area-character{
+        flex: 1;
+    }
+    .area-gamer{
+        overflow: visible;
+    }
+}
+@media(max-width:600px){
+    .area-title{
+        font-size: 15px;
+    }
+    .img img{
+        width: 90px;
+    }
+    .mago img, .barbaro img{
+        width: 70px;
+    }
+    .arqueira img{
+        width: 80px;
+    }
+    .area-img{
+        gap: 20px;
+        flex: 2;
+    }
+    .area-title{
+       align-items: center;
+    }
+    .area-gamer-2-p1, .area-gamer-2-p2{
+        width: 100%;
+        padding: 20px 5px;
+        border-radius: 0;
+    }
+    .selection img{
+        width: 80px;
+    }
+    .super-mago-p1 img, .super-mago-p2 img, .superbarbaro-p1 img, .superbarbaro-p2 img, .arqueiro-magico img{
+        width: 60px;
+    }
+    .area-selection-p1 span, .area-selection-p2 span{
+        font-size: 12px;
+    }
+    .selection{
+        flex: 1;
+        width: auto;
+    }
+    .area-name-p1 input, .area-name-p2 input{
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .erro-name{
+        font-size: 12px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .area-name-p1 button, .area-name-p2 button{
+        font-size: 14px;
+    }
+    .attack-buttons-p1, .attack-buttons-p2{
+        gap: 22px;
+        padding: 10px;
+    }
+    .character-p1 img, .character-p2 img{
+        width: 80px;
+    }
+    .area-gamer-3 button{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .attack-basic, .attack-hard, .attack-defense, .attack-special{
+        gap: 0;
+    }
+    .info{
+        font-size: 12px;
+        width: 50%;
+    }
+}
+@media(max-width:350px){
+    .area-rest{
+        flex-direction: column;
+    }
+    .area-title{
+        font-size: 14px;
+    }
+    .area-button button{
+        font-size: 13px;
+    }
+    .area-img{
+        gap: 15px;
+    }
+    .img img{
+        width: 70px;
+    }
+    .arqueira img{
+        width: 55px;
+    }
+    .mago img, .barbaro img{
+        width: 55px;
+    }
+    .selection img{
+        width: 65px;
+    }
+    .super-mago-p1 img, .super-mago-p2 img, .superbarbaro-p1 img, .superbarbaro-p2 img, .arqueiro-magico img{
+        width: 47px;
+    }
+    .area-p1, .area-p2, .area-hp{
+        font-size: 10px;
+    }
+}

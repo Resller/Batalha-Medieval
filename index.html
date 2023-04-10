@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a744b8d1b.js" crossorigin="anonymous"></script>
+    <title> Batalha Medieval</title>
+</head>
+<body>
+    <div class="area-gamer">
+        <div class="area-gamer-1">
+            <div class="area-title"> 
+                <h1> Batalha Medieval</h1>
+            </div>
+            <div class="area-img">
+                <div class="img barbaro">
+                    <img src="assets/imagens/personagens/superbarbaro.png" alt="">
+                </div>
+                <div class="img mago">
+                    <img src="assets/imagens/personagens/super-mago.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/imagens/personagens/principe.png" alt="">
+                </div>
+                <div class="img arqueira">
+                    <img src="assets/imagens/personagens/arqueira.png" alt="">
+                </div>
+                <div class="area-button">
+                    <button class="pvp">Player <span>vs</span> Player</button>
+                    <button class="pvb">Player <span>vs</span> Boot</button>
+                </div>
+            </div>
+        </div>
+        <div class="area-gamer-2-p1">
+            <div class="area-title-p1">
+                <h2>Player 1</h2>
+            </div>
+            <div class="area-selection-p1">
+                <div class="selection superbarbaro-p1">
+                    <span>Barbaro</span>
+                    <img src="assets/imagens/personagens/superbarbaro.png" alt=""> 
+                </div>
+                <div class="selection super-mago-p1">
+                    <span> Mago</span>
+                    <img src="assets/imagens/personagens/super-mago.png" alt="">         
+                </div>
+                <div class="selection principe-p1">
+                    <span>Principe</span>
+                    <img src="assets/imagens/personagens/principe.png" alt=""> 
+                </div>
+                <div class="selection arqueiro-magico">
+                    <span>Arqueira</span>
+                    <img src="assets/imagens/personagens/arqueira.png" alt="">                    
+                </div>
+            </div>
+            <div class="area-checkbox-p1">
+                <input type="checkbox" class="cb">
+                <input type="checkbox" class="cb">
+                <input type="checkbox" class="cb">
+                <input type="checkbox" class="cb">
+            </div>
+            <div class="area-desc">
+                <div class="barbaro-desc"> 
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Apesar de ser muitas vezes julgado por sua baixa inteligência, ele sempre prova que a força bruta é a melhor arma.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 180</span>  
+                            <span> <span id="att">Ataque:</span> 15</span> 
+                            <span><span id="att"> Defesa:</span> 13</span> 
+                            <span><span id="att">Velocidade:</span> 09</span> 
+                        </div>
+                    </div>                  
+                </div> 
+                <div class="mago-desc">
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Eu sou a fonte de sabedoria e poder. Posso fazer tudo o que uma arma não fazarma.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 120</span>  
+                            <span> <span id="att">Ataque:</span> 19</span> 
+                            <span><span id="att"> Defesa:</span> 09</span> 
+                            <span><span id="att">Velocidade:</span> 12</span> 
+                        </div>  
+                    </div>            
+                </div>
+                <div class="principe-desc">
+                    <i class="fa-sharp fa-solid fa-question "></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Um campeão protegido pelos deuses, que se orienta por um código de honra ou de conduta.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 150</span>  
+                            <span> <span id="att">Ataque:</span> 17</span> 
+                            <span><span id="att"> Defesa:</span> 11</span> 
+                            <span><span id="att">Velocidade:</span> 15</span> 
+                        </div>
+                    </div>                  
+                </div>
+                <div class="arqueira-desc">
+                    <i class="fa-sharp fa-solid fa-question "></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Sua afinidade e dedicação a um único tipo de arma, torna possível que realizem verdadeiras proezas quando disparam suas flechas.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 100</span>  
+                            <span> <span id="att">Ataque:</span> 21</span> 
+                            <span><span id="att"> Defesa:</span> 07</span> 
+                            <span><span id="att">Velocidade:</span> 17</span> 
+                        </div>
+                    </div>    
+                </div>   
+            </div>
+            <div class="area-name-p1">
+                <label>
+                    <input class="input-name" type="text" placeholder="NickName:" autofocus>
+                    <div class="erro-name">....</div>
+                </label>
+                <button class="start">Próximo</button>
+            </div>
+        </div>
+        <div class="area-gamer-2-p2">
+            <div class="area-title-p2">
+                <h2>Player 2</h2>
+            </div>
+            <div class="area-selection-p2">
+                <div class="selection superbarbaro-p2">
+                    <span>Barbaro</span>
+                    <img src="assets/imagens/personagens/superbarbaro.png" alt="">
+                    
+                </div>
+                <div class="selection super-mago-p2">
+                    <span>Mago</span>
+                    <img src="assets/imagens/personagens/super-mago.png" alt="">
+                    
+                </div>
+                <div class="selection principe-p2">
+                    <span>Principe</span>
+                    <img src="assets/imagens/personagens/principe.png" alt="">
+                    
+                </div>
+                <div class="selection arqueiro-magico">
+                    <span>Arqueira</span>
+                    <img src="assets/imagens/personagens/arqueira.png" alt="">
+                </div>
+            </div>
+            <div class="area-checkbox-p2">
+                <input type="checkbox"class="cb" >
+                <input type="checkbox"class="cb">
+                <input type="checkbox"class="cb">
+                <input type="checkbox"class="cb">
+            </div>
+            <div class="area-desc">
+                <div class="barbaro-desc"> 
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Apesar de ser muitas vezes julgado por sua baixa inteligência, ele sempre prova que a força bruta é a melhor arma.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 180</span>  
+                            <span> <span id="att">Ataque:</span> 15</span> 
+                            <span><span id="att"> Defesa:</span> 13</span> 
+                            <span><span id="att">Velocidade:</span> 09</span> 
+                        </div>
+                    </div>                  
+                </div> 
+                <div class="mago-desc">
+                    <i class="fa-sharp fa-solid fa-question"></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Eu sou a fonte de sabedoria e poder. Posso fazer tudo o que uma arma não fazarma.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 120</span>  
+                            <span> <span id="att">Ataque:</span> 19</span> 
+                            <span><span id="att"> Defesa:</span> 09</span> 
+                            <span><span id="att">Velocidade:</span> 12</span> 
+                        </div>  
+                    </div>            
+                </div>
+                <div class="principe-desc">
+                    <i class="fa-sharp fa-solid fa-question "></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Um campeão protegido pelos deuses, que se orienta por um código de honra ou de conduta.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 150</span>  
+                            <span> <span id="att">Ataque:</span> 17</span> 
+                            <span><span id="att"> Defesa:</span> 11</span> 
+                            <span><span id="att">Velocidade:</span> 15</span> 
+                        </div>
+                    </div>                  
+                </div>
+                <div class="arqueira-desc">
+                    <i class="fa-sharp fa-solid fa-question "></i>
+                    <div class="descrição">
+                        <div class="desc">
+                            Sua afinidade e dedicação a um único tipo de arma, torna possível que realizem verdadeiras proezas quando disparam suas flechas.
+                        </div>
+                        <div class="linha"></div>
+                        <h4>Atributos</h4>
+                        <div class="attributes">
+                            <span> <span id="att">HP:</span> 100</span>  
+                            <span> <span id="att">Ataque:</span> 21</span> 
+                            <span><span id="att"> Defesa:</span> 07</span> 
+                            <span><span id="att">Velocidade:</span> 17</span> 
+                        </div>
+                    </div>    
+                </div>   
+            </div>
+            <div class="area-name-p2">
+                <label >
+                    <input type="text"  class="input-name" placeholder="NickName:" autofocus>
+                    <div class="erro-name">....</div>
+                </label>
+                <button class="start">Iniciar Jogo</button>
+            </div>
+        </div>
+
+        <div class="area-gamer-3">
+            <div class="area-figth">
+                <div class="area-vitoria">
+                    <div class="area-p1">
+                        <span class="name">Player1</span>
+                        <div class="counter-p1">
+                            <span class="number">0</span>
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="area-p2">
+                        <span class="name">Player2</span>
+                        <div class="counter-p2">
+                            <span class="number">0</span>
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="area-hp">
+                    <div class="area-hp-p1">
+                        <div class="name-character">Super Mago</div>
+                        <div class="area-bar-life">
+                            <div class="barlife-p1">
+                                <div class="life"></div>
+                            </div>
+                            <span class="name-hp">HP 100</span>
+                        </div>
+                        <div class="area-bar-manna">
+                            <div class="bar-manna">
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                            </div>
+                            <span>MANA 10</span>
+                        </div>
+                    </div>
+                    <div class="area-hp-p2">
+                        <div class="name-character">Principe</div>
+                        <div class="area-bar-life">
+                            <div class="barlife-p2">
+                                <div class="life"></div>
+                            </div>
+                            <span class="name-hp">HP 100</span>
+                        </div>
+                        <div class="area-bar-manna">
+                            <div class="bar-manna">
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                                <div class="manna"></div>
+                                
+                            </div>
+                            <span>MANA 10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="area-character">
+                    <div class="character-p1">
+                        <img src="" alt="">
+                    </div>
+                    <div class="character-p2">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="area-background-control">
+                <div class="area-attack">
+                    <div class="attack-buttons-p1">
+                        <div class="attack-area1">
+                            <div class="attack-basic">
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">1</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">1</span></span>
+                                 </div>   
+                                <button>Flecha certeira </button>
+                            </div>
+                            <div class="attack-hard">
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">2</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">3</span></span>
+                                 </div>
+                                <button>Flecha certeira</button>
+                            </div>
+                        </div>
+                        <div class="attack-area2">
+                            <div class="attack-defense">
+                                <button>Flecha certeira</button>
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">0</span></span> 
+                                    <span>Multiplicador: <span id="n">4</span></span>
+                                 </div>
+                            </div>
+                            <div class="attack-special">
+                                <button>Flecha certeira</button>
+                                  <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                  <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">4</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">6</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-buttons-p2">
+                        <div class="attack-area1">
+                            <div class="attack-basic">           
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">1</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">1</span></span>
+                                 </div>
+                                <button>asdasd</button>
+                            </div>
+                            <div class="attack-hard">                               
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">2</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">3</span></span>
+                                </div>
+                                <button>xxxx</button>
+                            </div>
+                        </div>
+                        <div class="attack-area2">
+                            <div class="attack-defense">
+                                <button>dddddd asd</button>
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">0</span></span> 
+                                    <span>Multiplicador: <span id="n">4</span></span>
+                                 </div>
+                            </div>
+                            <div class="attack-special">
+                                <button> ssssss asdasd</button>
+                                <div class="info-desc-control"><i class="fa-sharp fa-solid fa-question "></i></div>
+                                <div class="info-attack">
+                                    <span>Custo de MANA: <span id="n">4</span></span> 
+                                    <span> Dano Multiplicador: <span id="n">6</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area-log">
+                    <div class="info"> Inicie os Ataques </div>
+                    <div class="area-rest">
+                        <button class="new-characters">Novos Personagens</button>
+                        <button class="new-gamer">Nova Batalha</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+       
+   
+    <script src="assets/js/classes.js"></script>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
